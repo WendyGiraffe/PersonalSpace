@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chang Zhou — AI Technical Product Manager</title>
+  <meta name="description" content="Chang Zhou is an AI and technical product manager with hands-on development experience across AI agents, RAG, workflow automation, enterprise SaaS, API platforms, and B2B delivery.">
+  <meta name="keywords" content="Chang Zhou, AI Product Manager, Technical Product Manager, AI Agent, RAG, Workflow, Enterprise SaaS, Java, Product Portfolio">
+  <meta property="og:title" content="Chang Zhou — AI Technical Product Manager">
+  <meta property="og:description" content="Product manager and developer building AI agents, RAG workflows, enterprise platforms, and AI-powered testing systems.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f0f0f">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23D4783C'/%3E%3Ctext x='50' y='63' font-size='42' font-family='Arial' font-weight='800' text-anchor='middle' fill='white'%3ECZ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Chang Zhou home">
+        <span class="brand-mark">CZ</span>
+        <span class="brand-text">Chang Zhou</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#cases" data-i18n="nav.cases">Case Studies</a>
+        <a href="#visuals" data-i18n="nav.visuals">Visuals</a>
+        <a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#github" data-i18n="nav.github">GitHub</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-toggle" type="button" aria-label="Switch language">
+          <span class="lang-current">EN</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-next">中</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-glow hero-glow-a"></div>
+    <div class="hero-glow hero-glow-b"></div>
+    <div class="hero-inner">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse-dot"></span><span data-i18n="hero.eyebrow">AI Product Manager · Technical PM · Developer</span></div>
+        <h1 data-i18n="hero.title">Building agentic product systems from problem framing to production delivery.</h1>
+        <p class="hero-desc" data-i18n="hero.desc">I connect product strategy, AI architecture, and engineering execution across AI agents, RAG, workflow automation, enterprise security SaaS, and API/platform products.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#cases" data-i18n="hero.primaryCta">Explore my work</a>
+          <button class="btn btn-secondary" type="button" id="printResume" data-i18n="hero.secondaryCta">Print / save résumé</button>
+          <a class="btn btn-ghost" href="https://github.com/WendyGiraffe" target="_blank" rel="noreferrer" data-i18n="hero.githubCta">GitHub profile</a>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal" role="img" aria-label="Product system diagram">
+        <div class="panel-header">
+          <div class="window-dots"><span></span><span></span><span></span></div>
+          <span data-i18n="hero.panelTitle">agent-product-loop.yaml</span>
+        </div>
+        <div class="system-loop" id="systemLoop"></div>
+      </div>
+    </div>
+
+    <div class="metrics-strip reveal" id="metricsStrip"></div>
+  </header>
+
+  <main id="main">
+    <section class="section intro-section">
+      <div class="section-inner two-col">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="intro.label">Positioning</span>
+          <h2 data-i18n="intro.title">A product leader who can go deep with engineers.</h2>
+        </div>
+        <div class="intro-card reveal">
+          <p data-i18n="intro.body">With a computer engineering background and Java/Spring delivery experience, I translate ambiguous business problems into product requirements, technical workflows, API designs, acceptance criteria, and releases that teams can execute.</p>
+          <div class="signature-row">
+            <span>Chang Zhou</span>
+            <span>Shanghai, China</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cases-section" id="cases">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="cases.label">Selected Work</span>
+          <h2 data-i18n="cases.title">Case studies across AI agents, engineering platforms, and security SaaS.</h2>
+          <p data-i18n="cases.desc">A concise view of products where I owned discovery, product design, technical alignment, delivery coordination, and measurable outcomes.</p>
+        </div>
+        <div class="case-grid" id="caseGrid"></div>
+      </div>
+    </section>
+
+    <section class="section visuals-section" id="visuals">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="visuals.label">Product Visuals</span>
+          <h2 data-i18n="visuals.title">Prototype screens and system design artifacts.</h2>
+          <p data-i18n="visuals.desc">Selected UI prototypes and product diagrams from local project work, curated to show how I move from workflows and architecture to shippable product interfaces.</p>
+        </div>
+        <div class="visual-feature reveal" id="visualFeature"></div>
+        <div class="visual-grid" id="visualGrid"></div>
+      </div>
+    </section>
+
+    <section class="section capabilities-section" id="capabilities">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="capabilities.label">Capability Map</span>
+          <h2 data-i18n="capabilities.title">Product thinking plus implementation literacy.</h2>
+          <p data-i18n="capabilities.desc">I work best at the boundary where customer problems, AI capability design, platform architecture, and delivery governance meet.</p>
+        </div>
+        <div class="capability-grid" id="capabilityGrid"></div>
+      </div>
+    </section>
+
+    <section class="section workflow-section">
+      <div class="section-inner two-col wide-gap">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="workflow.label">How I Work</span>
+          <h2 data-i18n="workflow.title">From uncertainty to a shipped product loop.</h2>
+          <p data-i18n="workflow.desc">I make complex AI products controllable through explicit milestones, domain modeling, checkpoints, acceptance metrics, and human-in-the-loop mechanisms.</p>
+        </div>
+        <div class="workflow-list reveal" id="workflowList"></div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="experience.label">Experience</span>
+          <h2 data-i18n="experience.title">Building products in AI, security, and enterprise platforms.</h2>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <section class="section education-section">
+      <div class="section-inner two-col">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="education.label">Education &amp; Credentials</span>
+          <h2 data-i18n="education.title">Engineering foundation with international training.</h2>
+        </div>
+        <div class="education-grid" id="educationGrid"></div>
+      </div>
+    </section>
+
+    <section class="section github-section" id="github">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="github.label">Public GitHub</span>
+          <h2 data-i18n="github.title">Code footprint and learning archive.</h2>
+          <p data-i18n="github.desc">Public repositories visible on GitHub. I keep this section factual and link directly to source.</p>
+        </div>
+        <div class="repo-grid" id="repoGrid"></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-inner contact-card reveal">
+        <div>
+          <span class="section-label" data-i18n="contact.label">Contact</span>
+          <h2 data-i18n="contact.title">Let's build AI products that survive real delivery.</h2>
+          <p data-i18n="contact.desc">Open to AI Product Manager, Technical Product Manager, and Platform Product Manager opportunities.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:chang_zhou2024@163.com">chang_zhou2024@163.com</a>
+          <a class="btn btn-secondary light" href="tel:+8619121780667">+86&nbsp;191&nbsp;2178&nbsp;0667</a>
+          <a class="btn btn-ghost light" href="https://github.com/WendyGiraffe" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-inner footer-inner">
+      <span>© <span id="year">2026</span> Chang Zhou</span>
+      <span data-i18n="footer.note">Designed as a static bilingual portfolio for GitHub Pages.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

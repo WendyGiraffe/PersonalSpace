@@ -32,5 +32,5 @@ The site is static and has no build step or runtime dependency.
 - Resume content is based on `英文_AI_Technical_Product_Manager.docx` supplied locally.
 - GitHub cards link to the six repositories publicly visible on `github.com/WendyGiraffe` at the time of creation. Repository descriptions are intentionally conservative.
 - The “Print / save résumé” action uses the browser print dialog. Choose **Save as PDF** when a PDF copy is needed.
-- The `assets/` folder contains curated screenshots captured from local prototype HTML files and selected PNG design artifacts under `Desktop\工作项目`. They are presented as portfolio visuals, not linked as live product functionality.
+- The `assets/` folder contains curated screenshots captured from local prototype HTML files, selected PNG design artifacts, and portfolio-safe SVG diagrams based on product architecture and workflow documents under `Desktop\工作项目`. They are presented as portfolio visuals, not linked as live product functionality.
 - Replace the contact details or add a resume PDF link in `index.html` if a public downloadable resume is desired.

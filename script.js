@@ -25,8 +25,8 @@ const translations = {
     },
     visuals: {
       label: "Product Visuals",
-      title: "Prototype screens and system design artifacts.",
-      desc: "Selected UI prototypes and product diagrams from local project work, curated to show how I move from workflows and architecture to shippable product interfaces."
+      title: "Artifacts that show how I work as a product manager.",
+      desc: "Not a screenshot gallery: a working set of prototypes, system frameworks, logic maps, delivery controls, and interaction sequences from real product work."
     },
     capabilities: {
       label: "Capability Map",
@@ -76,8 +76,8 @@ const translations = {
     },
     visuals: {
       label: "产品视觉",
-      title: "原型界面与系统设计成果。",
-      desc: "精选本地项目中的 UI 原型与产品设计图，展示我如何把工作流和架构推进为可交付的产品界面。"
+      title: "用不同类型的成果，展示产品经理如何推进工作。",
+      desc: "这里不再只是项目截图，而是按产品职责整理的原型图、框架图、逻辑图、项目管理图和时序图。"
     },
     capabilities: {
       label: "能力地图",
@@ -147,7 +147,15 @@ const data = {
         resultLabel: "requirements → reports"
       },
       {
-        type: "02 / platform",
+        type: "02 / AI platform",
+        title: "IIA Cloud AI-assisted Engineering Platform",
+        desc: "Designed a collaborative workspace that turns team conversations into issues, structures product knowledge, orchestrates AI agents, and connects requirements, design, development, testing, and release decisions.",
+        tags: ["IIA Cloud", "AI Agent", "Issue workflow", "Knowledge base"],
+        result: "1 loop",
+        resultLabel: "chat → issue → delivery"
+      },
+      {
+        type: "03 / platform",
         title: "VxSPACE Intelligent Engineering Collaboration",
         desc: "Defined a Cloud · Desktop · CLI · Host product series for device access, task execution, knowledge services, asset distribution, observability, audit, and governance.",
         tags: ["Platform", "Edge autonomy", "Domain model"],
@@ -155,7 +163,7 @@ const data = {
         resultLabel: "cross-end product model"
       },
       {
-        type: "03 / enterprise SaaS",
+        type: "04 / enterprise SaaS",
         title: "AI Security Management Platform",
         desc: "Led product evolution across vulnerability scanning, log and database audit, network audit, web tamper protection, risk scoring, and northbound API integration.",
         tags: ["Security SaaS", "API", "Risk scoring", "Team lead"],
@@ -173,7 +181,15 @@ const data = {
         resultLabel: "需求 → 测试报告"
       },
       {
-        type: "02 / 平台产品",
+        type: "02 / AI 平台",
+        title: "IIA Cloud AI 辅助工程平台",
+        desc: "设计协同工作台，将团队沟通沉淀为 Issue，结构化产品知识，编排 AI Agent，并连接需求、设计、开发、测试与发布决策。",
+        tags: ["IIA Cloud", "AI Agent", "Issue 流程", "知识库"],
+        result: "1 个闭环",
+        resultLabel: "沟通 → Issue → 交付"
+      },
+      {
+        type: "03 / 平台产品",
         title: "VxSPACE 智能工程协作软件系列",
         desc: "定义 Cloud · Desktop · CLI · Host 产品系列，连接设备接入、任务执行、知识服务、工程资产分发、可观测、审计与治理。",
         tags: ["平台", "边缘自治", "领域建模"],
@@ -181,7 +197,7 @@ const data = {
         resultLabel: "跨端产品模型"
       },
       {
-        type: "03 / 企业 SaaS",
+        type: "04 / 企业 SaaS",
         title: "AI 安全管理平台",
         desc: "负责漏洞扫描、日志与数据库审计、网络审计、Web 防篡改、风险评分和北向 API 集成等能力的产品迭代。",
         tags: ["安全 SaaS", "API", "风险评分", "团队管理"],
@@ -191,102 +207,100 @@ const data = {
     ]
   },
   visuals: {
-    en: {
-      feature: {
-        src: "assets/vxspace-ota-prototype.png",
-        alt: "VxSPACE Runtime OTA module update prototype screen",
-        eyebrow: "Featured prototype · VxSPACE",
-        title: "Runtime OTA update flow for edge devices",
-        desc: "A desktop prototype for device detail, update range selection, update feedback, failure handling, and progress visibility in a weak-network engineering environment.",
-        tags: ["Desktop prototype", "OTA workflow", "Edge device", "Operational feedback"]
+    en: [
+      {
+        category: "Prototype",
+        responsibility: "Validate product direction before development",
+        src: "assets/iia-cloud-structure-list.png",
+        alt: "IIA Cloud structure list prototype screen",
+        title: "Workspace structure prototype",
+        desc: "High-fidelity screen used to align navigation, document structure, ownership, versioning, and cross-workspace information architecture.",
+        tags: ["Hi-fi prototype", "Information architecture", "Workspace UX"]
       },
-      items: [
-        {
-          src: "assets/os-testing-prototype.png",
-          alt: "Operating system testing verification module prototype",
-          title: "OS testing verification workbench",
-          desc: "Prototype screen for requirement review progress, issue items, and tester confirmation flow."
-        },
-        {
-          src: "assets/os-static-review.png",
-          alt: "Static review page for operating system testing verification platform",
-          title: "Static review confirmation detail",
-          desc: "A detailed review table connecting requirements, code mapping, implementation status, and verification actions."
-        },
-        {
-          src: "assets/vxspace-cloud-console.png",
-          alt: "VxDock Cloud private deployment login prototype",
-          title: "VxDock Cloud private console",
-          desc: "Cloud-side entry prototype for private deployment and organization-level governance."
-        },
-        {
-          src: "assets/ai-agent-architecture.png",
-          alt: "AI agent product architecture relationship diagram",
-          title: "AI agent capability architecture",
-          desc: "Design artifact mapping model invocation, knowledge retrieval, workflow editing, observability, collaboration, permissions, and outcomes."
-        },
-        {
-          src: "assets/ai-requirement-flow.png",
-          alt: "AI requirement analysis agent sub-requirement flow",
-          title: "Requirement analysis agent flow",
-          desc: "Sub-requirement relationship diagram for multi-source input parsing, context control, knowledge retrieval, and index enhancement."
-        },
-        {
-          src: "assets/ai-coding-flow.png",
-          alt: "AI coding agent sub-requirement flow",
-          title: "AI coding agent flow",
-          desc: "System design flow for model configuration, workflow state, human review, and integration support."
-        }
-      ]
-    },
-    zh: {
-      feature: {
-        src: "assets/vxspace-ota-prototype.png",
-        alt: "VxSPACE Runtime OTA 模块更新原型界面",
-        eyebrow: "重点原型 · VxSPACE",
-        title: "面向边缘设备的 Runtime OTA 更新流程",
-        desc: "桌面端原型覆盖设备详情、更新范围选择、结果反馈、失败处理与进度可视化，适用于弱网工程交付场景。",
-        tags: ["桌面端原型", "OTA 工作流", "边缘设备", "运行反馈"]
+      {
+        category: "Framework",
+        responsibility: "Define boundaries between user experience, agent orchestration, and platform services",
+        src: "assets/iia-cloud-framework.svg",
+        alt: "IIA Cloud product framework diagram",
+        title: "AI engineering platform framework",
+        desc: "A product framework for the user workspace, message routing, iia.agent orchestration, sandbox execution, and core platform services.",
+        tags: ["System boundary", "Agent orchestration", "Platform services"]
       },
-      items: [
-        {
-          src: "assets/os-testing-prototype.png",
-          alt: "操作系统测试验证模块原型界面",
-          title: "操作系统测试验证工作台",
-          desc: "展示需求审查进度、问题项与测试人员确认流程的原型页面。"
-        },
-        {
-          src: "assets/os-static-review.png",
-          alt: "操作系统测试验证平台静态审查页面",
-          title: "静态审查确认明细",
-          desc: "将需求项、映射代码、功能实现、审查结论和复验操作连接在同一张表内。"
-        },
-        {
-          src: "assets/vxspace-cloud-console.png",
-          alt: "VxDock Cloud 私有化部署登录原型",
-          title: "VxDock Cloud 私有化控制台",
-          desc: "云侧私有化部署与组织级治理的入口原型。"
-        },
-        {
-          src: "assets/ai-agent-architecture.png",
-          alt: "AI 智能体产品架构关系图",
-          title: "AI 智能体能力架构",
-          desc: "设计图覆盖模型调用、知识检索、流程编排、运行观测、协作集成、权限与成果管理。"
-        },
-        {
-          src: "assets/ai-requirement-flow.png",
-          alt: "需求分析智能体子需求关系图",
-          title: "需求分析智能体流程",
-          desc: "展示多源输入解析、上下文控制、知识库调用与检索增强的子需求关系。"
-        },
-        {
-          src: "assets/ai-coding-flow.png",
-          alt: "AI 辅助编码智能体子需求关系图",
-          title: "AI 辅助编码智能体流程",
-          desc: "展示模型配置、流程状态、人审机制与集成支撑等系统设计关系。"
-        }
-      ]
-    }
+      {
+        category: "Logic",
+        responsibility: "Turn team collaboration into a repeatable delivery loop",
+        src: "assets/iia-cloud-logic-flow.svg",
+        alt: "IIA Cloud product logic flow diagram",
+        title: "Conversation-to-delivery logic flow",
+        desc: "Logic map connecting team chat, AI-created issues, requirement analysis, solution design, implementation, verification, release, and knowledge reuse.",
+        tags: ["Business logic", "Delivery loop", "Knowledge sedimentation"]
+      },
+      {
+        category: "Jira management",
+        responsibility: "Manage issue states, relationships, owners, and delivery evidence",
+        src: "assets/iia-cloud-issue-management.png",
+        alt: "IIA Cloud issue management detail screen",
+        title: "Issue governance and relation management",
+        desc: "A Jira-like management view showing issue source, linked requirements, blockers, child tasks, documents, screenshots, meetings, comments, and ownership.",
+        tags: ["Issue workflow", "Traceability", "Delivery governance"]
+      },
+      {
+        category: "Sequence",
+        responsibility: "Make agent interaction, latency, ownership, and feedback visible",
+        src: "assets/iia-cloud-sequence.svg",
+        alt: "IIA Cloud agent run sequence diagram",
+        title: "Agent run sequence and feedback path",
+        desc: "Sequence view of user message routing, run creation, sandbox allocation, tool calls, core-service operations, and real-time progress feedback.",
+        tags: ["Sequence diagram", "MCP tools", "Human-in-the-loop"]
+      }
+    ],
+    zh: [
+      {
+        category: "原型图",
+        responsibility: "在研发前验证产品方向",
+        src: "assets/iia-cloud-structure-list.png",
+        alt: "IIA Cloud 结构列表原型界面",
+        title: "工作空间结构原型",
+        desc: "高保真界面用于对齐导航、文档结构、负责人、版本信息与跨工作空间的信息架构。",
+        tags: ["高保真原型", "信息架构", "工作台体验"]
+      },
+      {
+        category: "框架图",
+        responsibility: "定义用户体验、Agent 编排与平台服务边界",
+        src: "assets/iia-cloud-framework.svg",
+        alt: "IIA Cloud 产品框架图",
+        title: "AI 工程平台产品框架",
+        desc: "从用户工作台、消息路由、iia.agent 编排、沙箱执行到核心平台服务，明确产品边界与协作关系。",
+        tags: ["系统边界", "Agent 编排", "平台服务"]
+      },
+      {
+        category: "逻辑图",
+        responsibility: "把团队协作转化为可复用的交付闭环",
+        src: "assets/iia-cloud-logic-flow.svg",
+        alt: "IIA Cloud 产品逻辑流程图",
+        title: "从沟通到交付的业务逻辑",
+        desc: "连接团队沟通、AI 创建 Issue、需求分析、方案设计、开发实现、测试验证、发布决策与知识沉淀。",
+        tags: ["业务逻辑", "交付闭环", "知识沉淀"]
+      },
+      {
+        category: "Jira 管理图",
+        responsibility: "管理 Issue 状态、关联关系、负责人和交付证据",
+        src: "assets/iia-cloud-issue-management.png",
+        alt: "IIA Cloud Issue 管理详情界面",
+        title: "Issue 治理与关联管理",
+        desc: "类 Jira 管理视图展示来源、关联需求、阻塞关系、子任务、文档、截图、会议、评论与负责人。",
+        tags: ["Issue 流程", "可追溯", "交付治理"]
+      },
+      {
+        category: "时序图",
+        responsibility: "让 Agent 交互、延迟、责任归属与反馈路径可见",
+        src: "assets/iia-cloud-sequence.svg",
+        alt: "IIA Cloud Agent 运行时序图",
+        title: "Agent 运行时序与反馈路径",
+        desc: "展示用户消息路由、Run 创建、沙箱分配、工具调用、核心服务操作与实时进度反馈。",
+        tags: ["时序图", "MCP 工具", "Human-in-the-loop"]
+      }
+    ]
   },
   capabilities: {
     en: [
@@ -421,20 +435,15 @@ function renderCases() {
 }
 
 function renderVisuals() {
-  const visuals = data.visuals[currentLang];
-  document.getElementById("visualFeature").innerHTML = `
-    <div class="visual-feature-media"><img src="${visuals.feature.src}" alt="${visuals.feature.alt}" loading="lazy"></div>
-    <div class="visual-feature-copy">
-      <div class="visual-eyebrow">${visuals.feature.eyebrow}</div>
-      <h3>${visuals.feature.title}</h3>
-      <p>${visuals.feature.desc}</p>
-      <div class="visual-tags">${visuals.feature.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
-    </div>
-  `;
-  document.getElementById("visualGrid").innerHTML = visuals.items.map((item) => `
-    <article class="visual-card reveal">
-      <div class="visual-thumb"><img src="${item.src}" alt="${item.alt}" loading="lazy"></div>
-      <div class="visual-card-copy"><h3>${item.title}</h3><p>${item.desc}</p></div>
+  document.getElementById("visualGrid").innerHTML = data.visuals[currentLang].map((item) => `
+    <article class="artifact-card reveal">
+      <div class="artifact-media"><img src="${item.src}" alt="${item.alt}" loading="lazy"></div>
+      <div class="artifact-copy">
+        <div class="artifact-meta"><span>${item.category}</span><span>${item.responsibility}</span></div>
+        <h3>${item.title}</h3>
+        <p>${item.desc}</p>
+        <div class="visual-tags">${item.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
+      </div>
     </article>
   `).join("");
 }

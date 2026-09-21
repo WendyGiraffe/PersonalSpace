@@ -3,7 +3,7 @@ const githubUrl = "https://github.com/WendyGiraffe";
 const translations = {
   en: {
     skip: "Skip to content",
-    nav: { cases: "Case Studies", visuals: "Visuals", capabilities: "Capabilities", experience: "Experience", github: "GitHub", contact: "Contact" },
+    nav: { cases: "Case Studies", delivery: "Delivery", visuals: "Visuals", capabilities: "Capabilities", experience: "Experience", github: "GitHub", contact: "Contact" },
     hero: {
       eyebrow: "AI Product Manager · Technical PM · Developer",
       title: "Building agentic product systems from problem framing to production delivery.",
@@ -23,10 +23,16 @@ const translations = {
       title: "Case studies across AI agents, engineering platforms, and security SaaS.",
       desc: "A concise view of products where I owned discovery, product design, technical alignment, delivery coordination, and measurable outcomes."
     },
+    delivery: {
+      label: "Delivery Snapshot",
+      title: "Recent Formal-Tech work turned into concrete delivery evidence.",
+      desc: "A richer view of current product work across IIA Cloud, VxSPACE, operating-system testing, ladder-diagram conversion, and agent product exploration.",
+      panelTitle: "Project progress"
+    },
     visuals: {
       label: "Product Visuals",
-      title: "Artifacts that show how I work as a product manager.",
-      desc: "Not a screenshot gallery: a working set of prototypes, system frameworks, logic maps, delivery controls, and interaction sequences from real product work."
+      title: "Six delivery angles from real product work.",
+      desc: "Browse the artifacts behind product delivery: prototype handoff, interaction handoff, functional module design, PRD delivery, task management, and user-material delivery."
     },
     capabilities: {
       label: "Capability Map",
@@ -54,7 +60,7 @@ const translations = {
   },
   zh: {
     skip: "跳转到正文",
-    nav: { cases: "项目案例", visuals: "原型图", capabilities: "能力地图", experience: "工作经历", github: "GitHub", contact: "联系我" },
+    nav: { cases: "项目案例", delivery: "交付进展", visuals: "产品视觉", capabilities: "能力地图", experience: "工作经历", github: "GitHub", contact: "联系我" },
     hero: {
       eyebrow: "AI 产品经理 · 技术产品经理 · 开发者",
       title: "从问题定义到生产交付，构建真正可落地的 Agent 产品系统。",
@@ -74,10 +80,16 @@ const translations = {
       title: "覆盖 AI Agent、工程协作平台与安全 SaaS 的产品实践。",
       desc: "这些项目体现了我在需求洞察、产品设计、技术对齐、交付协同以及结果度量上的完整参与。"
     },
+    delivery: {
+      label: "交付进展",
+      title: "把丰蕾近期工作经历转化为可量化的交付证据。",
+      desc: "更完整地呈现 IIA Cloud、VxSPACE、操作系统测试、梯形图转换与智能体探索中的产品推进工作。",
+      panelTitle: "项目进展"
+    },
     visuals: {
       label: "产品视觉",
-      title: "用不同类型的成果，展示产品经理如何推进工作。",
-      desc: "这里不再只是项目截图，而是按产品职责整理的原型图、框架图、逻辑图、项目管理图和时序图。"
+      title: "从六个交付角度呈现真实产品工作。",
+      desc: "按原型交付、交互交付、功能模块设计、PRD 交付、任务管理和用户材料交付浏览产品成果，让每张截图都对应具体职责。"
     },
     capabilities: {
       label: "能力地图",
@@ -109,15 +121,15 @@ const data = {
   metrics: {
     en: [
       ["4+", "years across AI & technical products"],
-      ["5", "product lines supported with AI upgrades"],
-      ["40%+", "knowledge retrieval efficiency improvement"],
-      ["95%+", "on-time delivery in current role"]
+      ["5", "current Formal-Tech projects supported"],
+      ["148", "IIA Cloud requirements structured"],
+      ["45", "core features tracked through delivery"]
     ],
     zh: [
       ["4+", "年 AI 与技术产品经验"],
-      ["5", "条产品线完成智能化升级"],
-      ["40%+", "知识检索效率提升"],
-      ["95%+", "当前岗位按期交付率"]
+      ["5", "个丰蕾当前项目支持"],
+      ["148", "IIA Cloud 需求梳理项"],
+      ["45", "核心功能交付跟踪项"]
     ]
   },
   systemNodes: {
@@ -135,6 +147,54 @@ const data = {
       ["04", "和团队一起交付", "PRD · API · UAT · 发布"],
       ["↻", "从生产环境学习", "反馈 → 下一轮迭代"]
     ]
+  },
+  delivery: {
+    en: {
+      metrics: [
+        ["148", "IIA Cloud requirements structured"],
+        ["13", "requirement and product docs updated"],
+        ["10+", "reviews organized or joined"],
+        ["45", "core features developed, tested, or accepted"],
+        ["53", "VxSPACE requirements organized"],
+        ["117", "OS testing requirements and scope items clarified"]
+      ],
+      projects: [
+        ["IIA Cloud", "Completed three development phases and four demos; tracked requirements, documents, reviews, schedules, development, testing, and acceptance feedback."],
+        ["VxSPACE", "Organized 53 requirements into six modules, supported milestone planning, and closed 18 issues or defects while phase-one development continued."],
+        ["Operating-system testing", "Clarified 117 testing requirements, completed prototype and requirement-document confirmation, and moved the first development milestone into testing."],
+        ["Ladder-diagram conversion", "Completed requirement collection and scheduling, entered development, and established weekly customer progress reporting."],
+        ["Agent exploration", "Discussed customer scenarios, clarified product form and usage flow, and submitted a requirement explanation to the customer."]
+      ],
+      practices: [
+        ["Requirement → module → task → acceptance", "Break down business needs into functional modules, task nodes, delivery artifacts, and acceptance evidence before committing them to a schedule."],
+        ["Delivery judged by artifacts", "Use documents, versions, demos, test conclusions, and closed-loop issues as evidence of milestone completion instead of relying on meeting updates."],
+        ["Issue impact triage", "Classify feedback by delivery impact, prioritize core function, compatibility, and stability problems, and verify fixes through regression."],
+        ["Unified tracking", "Record requirement changes, technical constraints, owners, dates, version impact, and test results in one traceable operating rhythm."]
+      ]
+    },
+    zh: {
+      metrics: [
+        ["148", "IIA Cloud 需求梳理项"],
+        ["13", "需求与产品文档输出 / 更新"],
+        ["10+", "组织 / 参与需求评审"],
+        ["45", "核心功能开发 / 测试 / 验收项"],
+        ["53", "VxSPACE 需求整理项"],
+        ["117", "操作系统测试需求 / 范围梳理项"]
+      ],
+      projects: [
+        ["IIA Cloud", "完成三期开发和四次演示，持续跟进需求、文档、评审、排期、开发、测试与验收反馈。"],
+        ["VxSPACE", "将 53 项需求拆解为 6 个功能模块，支持里程碑排期，并在一期开发过程中闭环 18 个问题 / 缺陷。"],
+        ["操作系统测试", "梳理 117 项测试需求与范围，完成原型和需求文档确认，第一期开发节点完成后进入测试阶段。"],
+        ["梯形图转换", "完成需求收集与项目排期，项目进入开发阶段，并建立每周客户进度汇报机制。"],
+        ["智能体探索", "参与客户场景讨论，明确产品形态和使用流程，已向客户提交需求说明。"]
+      ],
+      practices: [
+        ["需求项 → 功能模块 → 任务节点 → 验收结果", "先将业务需求拆解为功能模块、任务节点、交付物和验收证据，再纳入排期。"],
+        ["用交付物判断节点", "以文档、版本、演示、测试结论和闭环问题作为节点完成依据，而不是只依赖会议同步。"],
+        ["按影响范围处理问题", "根据交付影响划分反馈优先级，优先处理核心功能、兼容性和稳定性问题，并通过回归验证确认修复。"],
+        ["统一过程记录", "统一记录需求变更、技术约束、责任人、完成时间、版本影响和测试结果，减少跨团队信息差。"]
+      ]
+    }
   },
   cases: {
     en: [
@@ -340,7 +400,7 @@ const data = {
         date: "May 2026 — Present",
         role: "Product Manager, Software Defined Business Unit",
         company: "Shanghai Fenglei Technology Co., Ltd.",
-        bullets: ["Led AI Agent, knowledge base, workflow, and AI software factory solutions across 5 product lines.", "Designed task orchestration with context passing, tool invocation, result feedback, and multi-turn interaction.", "Built knowledge taxonomy, tagging, retrieval, and update systems; improved retrieval efficiency by 40%+.", "Coordinated product, engineering, deployment, QA, and operations with 95%+ on-time delivery."]
+        bullets: ["Owned product requirement analysis, scheduling, reviews, development follow-up, testing follow-up, and delivery coordination across IIA Cloud, VxSPACE, operating-system testing, ladder-diagram conversion, and agent exploration.", "For IIA Cloud, structured 148 requirements, updated 13 product documents, organized or joined 10+ reviews, tracked 45 core features through development, testing, and acceptance, and supported three development phases plus four demos.", "For VxSPACE, organized 53 requirements into six modules, supported milestone planning, and closed 18 issues or defects while phase-one development and phase-two design planning moved forward.", "For operating-system testing, clarified 117 testing requirements and scope items, completed prototype and requirement-document confirmation, and moved the first development milestone into testing."]
       },
       {
         date: "Jan 2022 — Mar 2026",
@@ -354,7 +414,7 @@ const data = {
         date: "2026 年 5 月 — 至今",
         role: "软件定义事业部 产品经理",
         company: "上海风雷科技有限公司",
-        bullets: ["负责 AI Agent、知识库、工作流与 AI 软件工厂方案，支持 5 条产品线智能化升级。", "设计支持上下文传递、工具调用、结果反馈与多轮交互的 Agent 任务编排架构。", "建设知识分类、标签、检索与更新体系，检索效率提升 40%+。", "协同产品、研发、部署、测试与运营，按期交付率达到 95%+。"]
+        bullets: ["负责 IIA Cloud、VxSPACE、操作系统测试、梯形图转换和智能体探索等项目的需求梳理、排期、评审、开发跟进、测试跟进与交付协同。", "在 IIA Cloud 中完成 148 项需求梳理、13 份产品文档输出 / 更新，组织或参与 10+ 次需求评审，跟进 45 项核心功能开发、测试与验收，并支持三期开发和四次项目演示。", "在 VxSPACE 中整理 53 项需求并拆解为 6 个功能模块，支持阶段排期，在一期开发和二期设计推进过程中跟进并闭环 18 个问题 / 缺陷。", "在操作系统测试项目中完成 117 项测试需求 / 范围梳理，推动原型和需求文档确认，第一期开发节点完成后进入测试阶段。"]
       },
       {
         date: "2022 年 1 月 — 2026 年 3 月",
@@ -396,6 +456,154 @@ const data = {
   }
 };
 
+const visualSlides = {
+  en: [
+    {
+      category: "Prototype Delivery",
+      responsibility: "Turn concepts into screens engineers can build from",
+      slides: [
+        ["assets/iia-cloud-structure-list.png", "IIA Cloud structure list prototype", "Workspace structure handoff", "Prototype handoff for navigation, document structure, ownership, versions, and cross-workspace information architecture."],
+        ["assets/os-testing-prototype.png", "Operating system testing verification prototype", "OS testing verification workbench", "Prototype for requirement review progress, issue items, tester confirmation, and delivery evidence."],
+        ["assets/vxspace-ota-prototype.png", "VxSPACE runtime OTA update prototype", "Runtime OTA update flow", "Desktop prototype covering device detail, update range, progress feedback, and failure handling."],
+        ["assets/vxspace-device-list.png", "VxSPACE device list prototype", "Edge device list", "Operational prototype for device inventory, status scanning, and the first step of an engineering support workflow."],
+        ["assets/vxspace-cloud-console.png", "VxDock Cloud private deployment console", "Cloud console entry", "Prototype view for private deployment, organization entry, and cloud-side product governance."
+        ]
+      ]
+    },
+    {
+      category: "Interaction Delivery",
+      responsibility: "Clarify user actions, AI feedback, and review points",
+      slides: [
+        ["assets/iia-cloud-ai-discuss.png", "IIA Cloud AI discussion screen", "AI discussion for a change item", "Conversation-oriented interaction for clarifying a change, its impact, and the next action before implementation."],
+        ["assets/iia-cloud-ai-edit.png", "IIA Cloud AI edit generation screen", "AI-assisted editing flow", "Interaction concept for generating, reviewing, and adjusting product content inside the workspace."],
+        ["assets/iia-cloud-ai-issues.png", "IIA Cloud AI-assisted issue creation screen", "AI-assisted issue creation", "Interaction handoff for turning a product request into multiple structured issues with owner and delivery context."],
+        ["assets/iia-cloud-code-generation.png", "IIA Cloud code generation interaction screen", "Code-generation interaction", "AI-assisted engineering interaction that exposes generation status, context, and review expectations."],
+        ["assets/iia-cloud-sequence.svg", "IIA Cloud Agent run sequence diagram", "Agent run feedback sequence", "Sequence view of message routing, run creation, sandbox allocation, tool calls, core-service operations, and real-time feedback."]
+      ]
+    },
+    {
+      category: "Functional Module Design",
+      responsibility: "Split product scope into modules, rules, and reusable loops",
+      slides: [
+        ["assets/iia-cloud-framework.svg", "IIA Cloud product framework diagram", "AI engineering platform framework", "Module design across user workspace, message routing, Agent orchestration, sandbox execution, and core platform services."],
+        ["assets/iia-cloud-logic-flow.svg", "IIA Cloud product logic flow diagram", "Conversation-to-delivery logic", "Functional loop from team chat and AI-created issues to analysis, design, implementation, verification, release, and reuse."],
+        ["assets/ai-agent-architecture.png", "AI agent capability architecture diagram", "AI agent capability architecture", "Capability modules for model invocation, knowledge retrieval, workflow editing, observability, collaboration, permissions, and outcomes."],
+        ["assets/ai-requirement-flow.png", "AI requirement analysis agent flow", "Requirement analysis module flow", "Module logic for multi-source input parsing, context control, knowledge retrieval, and index enhancement."],
+        ["assets/ai-coding-flow.png", "AI coding agent flow", "AI coding module flow", "Module flow for model configuration, workflow state, human review, and integration support."],
+        ["assets/vxspace-cloud-asset-tree.png", "VxSPACE Cloud asset tree prototype", "Cloud asset module structure", "Functional module view for asset hierarchy, organization context, and governance entry points."]
+      ]
+    },
+    {
+      category: "PRD Delivery",
+      responsibility: "Document requirements, fields, acceptance context, and delivery evidence",
+      slides: [
+        ["assets/iia-cloud-create-issue.png", "IIA Cloud create issue requirement screenshot", "Create-issue PRD screen", "Requirement-document screenshot defining issue creation fields, product rules, and the expected input structure."],
+        ["assets/iia-cloud-issue-core-fields.png", "IIA Cloud issue core fields screenshot", "Issue core-field specification", "PRD evidence for required fields, issue metadata, ownership, and traceability constraints."],
+        ["assets/iia-cloud-issue-list-view.png", "IIA Cloud issue list requirement screenshot", "Issue-list requirement view", "Requirement screenshot for list layout, filtering, state display, and delivery-management entry points."],
+        ["assets/vxspace-cloud-knowledge-doc.png", "VxSPACE Cloud knowledge document screen", "Knowledge document delivery", "Documentation surface showing how product knowledge and implementation context are organized for delivery."],
+        ["assets/iia-cloud-baseline-folder.png", "IIA Cloud baseline folder screen", "Baseline-folder delivery", "Document baseline view for organizing versions, folders, and reusable delivery material."],
+        ["assets/os-static-review.png", "Operating system testing static review page", "Requirement-to-verification evidence", "Connects requirements, code mapping, implementation status, review conclusions, and verification actions."]
+      ]
+    },
+    {
+      category: "Task Management",
+      responsibility: "Track scope, dependencies, owners, progress, and issue closure",
+      slides: [
+        ["assets/iia-cloud-issue-management.png", "IIA Cloud issue management detail screen", "Issue governance and relation management", "Task-management surface for source, linked requirements, blockers, child tasks, documents, comments, and ownership."],
+        ["assets/iia-cloud-relation-view.png", "IIA Cloud issue relation view", "Issue relationship map", "Relationship view for understanding dependencies and the impact of a product item."],
+        ["assets/iia-cloud-issue-split.png", "IIA Cloud issue split view", "Issue split-view management", "Focused management layout for balancing issue detail, context, and related delivery information."],
+        ["assets/iia-cloud-automation.png", "IIA Cloud automation detail screen", "Automation workflow management", "Configuration view for repeatable automation and operational hand-offs."],
+        ["assets/vxspace-cloud-issue-detail.png", "VxSPACE Cloud issue detail screen", "Cloud issue tracking", "Issue detail page for technical context, progress follow-up, and closure evidence."],
+        ["assets/vxspace-device-settings.png", "VxSPACE device settings screen", "Device configuration management", "Configuration surface for technical operations and device lifecycle control."]
+      ]
+    },
+    {
+      category: "User Materials Delivery",
+      responsibility: "Package product knowledge for users, teams, and operations",
+      slides: [
+        ["assets/vxspace-cloud-knowledge-doc.png", "VxSPACE Cloud knowledge document screen", "User-facing knowledge document", "Knowledge document page used to explain product context, usage material, and team handoff information."],
+        ["assets/iia-cloud-structure-management.png", "IIA Cloud structure management screen", "Knowledge structure management", "Management surface for organizing product knowledge, folder structure, and reusable user-facing material."],
+        ["assets/iia-cloud-baseline-folder.png", "IIA Cloud baseline folder screen", "Baseline material package", "Folder-based baseline package for released materials, reference documents, and cross-team reuse."],
+        ["assets/vxspace-cloud-device-detail.png", "VxSPACE Cloud device detail screen", "Device detail material", "User-support view for explaining device state, cloud attributes, and operational context."],
+        ["assets/vxspace-device-detail.png", "VxSPACE desktop device detail screen", "Runtime device detail material", "Desktop material for communicating device lifecycle, runtime state, and support actions."],
+        ["assets/vxspace-device-logs.png", "VxSPACE device logs screen", "Operational logs material", "Log view supporting user troubleshooting, issue triage, and recovery explanation."]
+      ]
+    }
+  ],
+  zh: [
+    {
+      category: "原型交付",
+      responsibility: "把概念转化为研发可理解的界面方案",
+      slides: [
+        ["assets/iia-cloud-structure-list.png", "IIA Cloud 结构列表原型界面", "工作空间结构原型交付", "用于交付导航、文档结构、负责人、版本信息与跨工作空间的信息架构。"],
+        ["assets/os-testing-prototype.png", "操作系统测试验证原型界面", "操作系统测试验证工作台", "展示需求审查进度、问题项、测试人员确认与交付证据。"],
+        ["assets/vxspace-ota-prototype.png", "VxSPACE Runtime OTA 更新原型", "Runtime OTA 更新流程", "覆盖设备详情、更新范围、进度反馈与失败处理。"],
+        ["assets/vxspace-device-list.png", "VxSPACE 设备列表原型", "边缘设备列表", "面向工程支持流程的设备资产、状态扫描与首步入口。"],
+        ["assets/vxspace-cloud-console.png", "VxDock Cloud 私有化控制台", "云端控制台入口", "展示私有化部署、组织入口与云端产品治理的原型视图。"]
+      ]
+    },
+    {
+      category: "交互交付",
+      responsibility: "明确用户动作、AI 反馈和人审节点",
+      slides: [
+        ["assets/iia-cloud-ai-discuss.png", "IIA Cloud AI 讨论变更项界面", "AI 讨论变更项", "用于在开发前澄清变更内容、影响范围与下一步动作的协作交互。"],
+        ["assets/iia-cloud-ai-edit.png", "IIA Cloud AI 编辑生成界面", "AI 辅助编辑流程", "在产品工作台中生成、检查和调整产品内容的交互概念。"],
+        ["assets/iia-cloud-ai-issues.png", "IIA Cloud AI 辅助创建 Issue 界面", "AI 辅助创建 Issue", "将产品请求转化为多个结构化 Issue，并明确负责人和交付上下文。"],
+        ["assets/iia-cloud-code-generation.png", "IIA Cloud 代码生成交互界面", "代码生成交互", "展示 AI 辅助工程交互中的生成状态、上下文和评审预期。"],
+        ["assets/iia-cloud-sequence.svg", "IIA Cloud Agent 运行时序图", "Agent 运行反馈时序", "展示消息路由、Run 创建、沙箱分配、工具调用、核心服务操作与实时反馈。"]
+      ]
+    },
+    {
+      category: "功能模块设计",
+      responsibility: "把产品范围拆成模块、规则和可复用闭环",
+      slides: [
+        ["assets/iia-cloud-framework.svg", "IIA Cloud 产品框架图", "AI 工程平台产品框架", "拆解用户工作台、消息路由、Agent 编排、沙箱执行与核心平台服务。"],
+        ["assets/iia-cloud-logic-flow.svg", "IIA Cloud 产品逻辑流程图", "从沟通到交付的业务逻辑", "从团队沟通、AI 创建 Issue 到需求分析、方案设计、开发、验证、发布与复用。"],
+        ["assets/ai-agent-architecture.png", "AI 智能体能力架构图", "AI 智能体能力架构", "覆盖模型调用、知识检索、流程编辑、运行观测、协作、权限与成果管理。"],
+        ["assets/ai-requirement-flow.png", "需求分析智能体流程图", "需求分析模块流程", "展示多源输入解析、上下文控制、知识检索与索引增强。"],
+        ["assets/ai-coding-flow.png", "AI 辅助编码智能体流程图", "AI 辅助编码模块流程", "展示模型配置、流程状态、人审机制与集成支撑。"],
+        ["assets/vxspace-cloud-asset-tree.png", "VxSPACE Cloud 资产树原型", "云端资产模块结构", "展示资产层级、组织上下文与治理入口。"]
+      ]
+    },
+    {
+      category: "PRD 交付",
+      responsibility: "沉淀需求、字段、验收上下文和交付证据",
+      slides: [
+        ["assets/iia-cloud-create-issue.png", "IIA Cloud 创建 Issue 需求截图", "创建 Issue PRD 页面", "需求文档截图，定义 Issue 创建字段、产品规则与输入结构。"],
+        ["assets/iia-cloud-issue-core-fields.png", "IIA Cloud Issue 核心字段截图", "Issue 核心字段说明", "体现必填字段、Issue 元数据、负责人和可追溯约束的 PRD 证据。"],
+        ["assets/iia-cloud-issue-list-view.png", "IIA Cloud Issue 列表需求截图", "Issue 列表需求视图", "说明列表布局、筛选、状态展示与交付管理入口的需求截图。"],
+        ["assets/vxspace-cloud-knowledge-doc.png", "VxSPACE Cloud 知识文档界面", "知识文档交付", "展示产品知识和实现上下文如何被整理为可交付文档。"],
+        ["assets/iia-cloud-baseline-folder.png", "IIA Cloud 基线文件夹界面", "基线文件夹交付", "用于组织版本、文件夹和可复用交付材料的文档基线视图。"],
+        ["assets/os-static-review.png", "操作系统测试静态审查页面", "需求到验证证据", "连接需求、代码映射、实现状态、审查结论与复验操作。"]
+      ]
+    },
+    {
+      category: "任务管理",
+      responsibility: "跟踪范围、依赖、负责人、进度和问题闭环",
+      slides: [
+        ["assets/iia-cloud-issue-management.png", "IIA Cloud Issue 管理详情界面", "Issue 治理与关联管理", "在一个任务管理视图中展示来源、关联需求、阻塞关系、子任务、文档、评论与负责人。"],
+        ["assets/iia-cloud-relation-view.png", "IIA Cloud Issue 关系视图", "Issue 关联关系图", "用于理解产品项依赖关系和影响范围的可视化视图。"],
+        ["assets/iia-cloud-issue-split.png", "IIA Cloud Issue 分屏界面", "Issue 分屏管理", "平衡 Issue 详情、上下文与交付关联信息的管理布局。"],
+        ["assets/iia-cloud-automation.png", "IIA Cloud 自动化详情界面", "自动化流程管理", "配置可复用自动化流程和交接节点的管理界面。"],
+        ["assets/vxspace-cloud-issue-detail.png", "VxSPACE Cloud Issue 详情界面", "云端 Issue 跟踪", "用于技术上下文、进度跟进和闭环证据的 Issue 详情页。"],
+        ["assets/vxspace-device-settings.png", "VxSPACE 设备设置界面", "设备配置管理", "支持技术运营和设备生命周期管理的配置界面。"]
+      ]
+    },
+    {
+      category: "用户材料交付",
+      responsibility: "把产品知识包装给用户、团队和运营使用",
+      slides: [
+        ["assets/vxspace-cloud-knowledge-doc.png", "VxSPACE Cloud 知识文档界面", "面向用户的知识文档", "用于说明产品上下文、使用材料与团队交接信息的知识文档页面。"],
+        ["assets/iia-cloud-structure-management.png", "IIA Cloud 结构管理界面", "知识结构管理", "用于组织产品知识、文件夹结构和可复用用户材料的管理界面。"],
+        ["assets/iia-cloud-baseline-folder.png", "IIA Cloud 基线文件夹界面", "基线材料包", "面向发布材料、参考文档和跨团队复用的文件夹式基线材料。"],
+        ["assets/vxspace-cloud-device-detail.png", "VxSPACE Cloud 设备详情界面", "设备详情材料", "用于向用户解释设备状态、云端属性与运维上下文的支持视图。"],
+        ["assets/vxspace-device-detail.png", "VxSPACE 桌面端设备详情界面", "Runtime 设备详情材料", "用于说明设备生命周期、运行状态和支持动作的桌面端材料。"],
+        ["assets/vxspace-device-logs.png", "VxSPACE 设备日志界面", "运行日志材料", "支持用户排障、问题分级和恢复说明的日志视图。"]
+      ]
+    }
+  ]
+};
+
 let currentLang = localStorage.getItem("chang-zhou-lang") || "en";
 
 function getPath(object, path) {
@@ -434,18 +642,75 @@ function renderCases() {
   `).join("");
 }
 
+function renderDelivery() {
+  const delivery = data.delivery[currentLang];
+  document.getElementById("deliveryMetrics").innerHTML = delivery.metrics.map(([value, label]) => `
+    <div class="delivery-metric"><strong>${value}</strong><span>${label}</span></div>
+  `).join("");
+  document.getElementById("deliveryProjects").innerHTML = delivery.projects.map(([name, desc], index) => `
+    <article class="delivery-project"><div class="delivery-project-index">0${index + 1}</div><div><h3>${name}</h3><p>${desc}</p></div></article>
+  `).join("");
+  document.getElementById("deliveryPractices").innerHTML = delivery.practices.map(([title, desc]) => `
+    <article class="practice-card reveal"><span class="practice-mark">↗</span><h3>${title}</h3><p>${desc}</p></article>
+  `).join("");
+}
+
 function renderVisuals() {
-  document.getElementById("visualGrid").innerHTML = data.visuals[currentLang].map((item) => `
-    <article class="artifact-card reveal">
-      <div class="artifact-media"><img src="${item.src}" alt="${item.alt}" loading="lazy"></div>
+  const visualGrid = document.getElementById("visualGrid");
+  visualGrid.innerHTML = visualSlides[currentLang].map((item, categoryIndex) => `
+    <article class="artifact-card reveal" tabindex="0" data-carousel="${categoryIndex}">
+      <div class="artifact-media carousel" aria-label="${item.category} image carousel">
+        <img class="carousel-image" src="${item.slides[0][0]}" alt="${item.slides[0][1]}" loading="lazy">
+        <button class="carousel-button carousel-prev" type="button" aria-label="Previous image">‹</button>
+        <button class="carousel-button carousel-next" type="button" aria-label="Next image">›</button>
+        <div class="carousel-footer"><span class="carousel-count">1 / ${item.slides.length}</span><div class="carousel-dots" role="tablist" aria-label="${item.category} images">${item.slides.map((slide, index) => `<button class="carousel-dot${index === 0 ? " is-active" : ""}" type="button" role="tab" aria-label="Show image ${index + 1}" aria-selected="${index === 0}"></button>`).join("")}</div></div>
+      </div>
       <div class="artifact-copy">
         <div class="artifact-meta"><span>${item.category}</span><span>${item.responsibility}</span></div>
-        <h3>${item.title}</h3>
-        <p>${item.desc}</p>
-        <div class="visual-tags">${item.tags.map((tag) => `<span>${tag}</span>`).join("")}</div>
+        <h3 class="artifact-title">${item.slides[0][2]}</h3>
+        <p class="artifact-desc">${item.slides[0][3]}</p>
       </div>
     </article>
   `).join("");
+
+  visualGrid.querySelectorAll(".artifact-card").forEach((card, categoryIndex) => {
+    const item = visualSlides[currentLang][categoryIndex];
+    const image = card.querySelector(".carousel-image");
+    const title = card.querySelector(".artifact-title");
+    const desc = card.querySelector(".artifact-desc");
+    const count = card.querySelector(".carousel-count");
+    const dots = [...card.querySelectorAll(".carousel-dot")];
+    let current = 0;
+    let touchStartX = 0;
+
+    const showSlide = (nextIndex) => {
+      current = (nextIndex + item.slides.length) % item.slides.length;
+      const [src, alt, slideTitle, slideDesc] = item.slides[current];
+      image.src = src;
+      image.alt = alt;
+      title.textContent = slideTitle;
+      desc.textContent = slideDesc;
+      count.textContent = `${current + 1} / ${item.slides.length}`;
+      dots.forEach((dot, index) => {
+        const active = index === current;
+        dot.classList.toggle("is-active", active);
+        dot.setAttribute("aria-selected", String(active));
+      });
+    };
+
+    card.querySelector(".carousel-prev").addEventListener("click", () => showSlide(current - 1));
+    card.querySelector(".carousel-next").addEventListener("click", () => showSlide(current + 1));
+    dots.forEach((dot, index) => dot.addEventListener("click", () => showSlide(index)));
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") { event.preventDefault(); showSlide(current - 1); }
+      if (event.key === "ArrowRight") { event.preventDefault(); showSlide(current + 1); }
+    });
+    card.addEventListener("touchstart", (event) => { touchStartX = event.changedTouches[0].clientX; }, { passive: true });
+    card.addEventListener("touchend", (event) => {
+      const distance = event.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(distance) > 40) showSlide(distance > 0 ? current - 1 : current + 1);
+    }, { passive: true });
+  });
 }
 
 function renderCapabilities() {
@@ -483,6 +748,7 @@ function renderAll() {
   renderMetrics();
   renderSystemLoop();
   renderCases();
+  renderDelivery();
   renderVisuals();
   renderCapabilities();
   renderWorkflow();

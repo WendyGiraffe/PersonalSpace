@@ -462,71 +462,56 @@ const visualSlides = {
       category: "Prototype Delivery",
       responsibility: "Turn concepts into screens engineers can build from",
       slides: [
-        ["assets/iia-cloud-structure-list.png", "IIA Cloud structure list prototype", "Workspace structure handoff", "Prototype handoff for navigation, document structure, ownership, versions, and cross-workspace information architecture."],
-        ["assets/os-testing-prototype.png", "Operating system testing verification prototype", "OS testing verification workbench", "Prototype for requirement review progress, issue items, tester confirmation, and delivery evidence."],
-        ["assets/vxspace-ota-prototype.png", "VxSPACE runtime OTA update prototype", "Runtime OTA update flow", "Desktop prototype covering device detail, update range, progress feedback, and failure handling."],
-        ["assets/vxspace-device-list.png", "VxSPACE device list prototype", "Edge device list", "Operational prototype for device inventory, status scanning, and the first step of an engineering support workflow."],
-        ["assets/vxspace-cloud-console.png", "VxDock Cloud private deployment console", "Cloud console entry", "Prototype view for private deployment, organization entry, and cloud-side product governance."
-        ]
+        ["assets/visual-prototype-01.png", "Knowledge package detail prototype", "Knowledge package detail", "Prototype screenshot for a knowledge package detail page, including package metadata, version table, and confirmation dialogs."],
+        ["assets/visual-prototype-02.png", "VxSPACE device registration prototype with annotations", "Device registration feedback", "Annotated prototype for device registration success, state feedback, and user guidance after adding a device."],
+        ["assets/visual-prototype-03.png", "VxSPACE product form relationship and function architecture", "Product form and function architecture", "Prototype documentation showing Cloud and Desktop product forms, positioning, data scope, and functional hierarchy."],
+        ["assets/visual-prototype-04.png", "VxSPACE asset package list prototype", "Asset package list", "Prototype screenshot for resource package browsing, status display, filtering, and operation entry points."],
+        ["assets/visual-prototype-05.png", "VxSPACE dark device dashboard prototype", "Dark device dashboard", "Prototype for a dark-mode device dashboard with summary metrics, navigation, and empty-state handling."]
       ]
     },
     {
       category: "Interaction Delivery",
       responsibility: "Clarify user actions, AI feedback, and review points",
       slides: [
-        ["assets/iia-cloud-ai-discuss.png", "IIA Cloud AI discussion screen", "AI discussion for a change item", "Conversation-oriented interaction for clarifying a change, its impact, and the next action before implementation."],
-        ["assets/iia-cloud-ai-edit.png", "IIA Cloud AI edit generation screen", "AI-assisted editing flow", "Interaction concept for generating, reviewing, and adjusting product content inside the workspace."],
-        ["assets/iia-cloud-ai-issues.png", "IIA Cloud AI-assisted issue creation screen", "AI-assisted issue creation", "Interaction handoff for turning a product request into multiple structured issues with owner and delivery context."],
-        ["assets/iia-cloud-code-generation.png", "IIA Cloud code generation interaction screen", "Code-generation interaction", "AI-assisted engineering interaction that exposes generation status, context, and review expectations."],
-        ["assets/iia-cloud-sequence.svg", "IIA Cloud Agent run sequence diagram", "Agent run feedback sequence", "Sequence view of message routing, run creation, sandbox allocation, tool calls, core-service operations, and real-time feedback."]
+        ["assets/visual-interaction-01.png", "IIA Cloud structure interaction screenshot", "Structure navigation interaction", "Interaction screenshot showing workspace structure, hover states, document hierarchy, and operation entry points."],
+        ["assets/visual-interaction-02.png", "Operating system static review interaction screenshot", "Static review interaction", "Interaction screenshot for requirement review, issue confirmation, regeneration, and report generation actions."],
+        ["assets/visual-interaction-03.png", "Issue board interaction screenshot", "Kanban task interaction", "Interaction screenshot for issue search, swimlane switching, status columns, cards, priorities, and progress tracking."]
       ]
     },
     {
       category: "Functional Module Design",
       responsibility: "Split product scope into modules, rules, and reusable loops",
       slides: [
-        ["assets/iia-cloud-framework.svg", "IIA Cloud product framework diagram", "AI engineering platform framework", "Module design across user workspace, message routing, Agent orchestration, sandbox execution, and core platform services."],
-        ["assets/iia-cloud-logic-flow.svg", "IIA Cloud product logic flow diagram", "Conversation-to-delivery logic", "Functional loop from team chat and AI-created issues to analysis, design, implementation, verification, release, and reuse."],
-        ["assets/ai-agent-architecture.png", "AI agent capability architecture diagram", "AI agent capability architecture", "Capability modules for model invocation, knowledge retrieval, workflow editing, observability, collaboration, permissions, and outcomes."],
-        ["assets/ai-requirement-flow.png", "AI requirement analysis agent flow", "Requirement analysis module flow", "Module logic for multi-source input parsing, context control, knowledge retrieval, and index enhancement."],
-        ["assets/ai-coding-flow.png", "AI coding agent flow", "AI coding module flow", "Module flow for model configuration, workflow state, human review, and integration support."],
-        ["assets/vxspace-cloud-asset-tree.png", "VxSPACE Cloud asset tree prototype", "Cloud asset module structure", "Functional module view for asset hierarchy, organization context, and governance entry points."]
+        ["assets/visual-module-01.png", "VxDock functional architecture diagram", "VxDock functional architecture", "Module design diagram connecting Agent / CLI, Desktop modules, server integration, OTA platform, and RAGFlow knowledge base."],
+        ["assets/visual-module-02.png", "Device detail module update static prototype", "Module update static prototype", "Module design screenshot for device detail, check-update flow, result feedback, update selection, and confirmation behavior."],
+        ["assets/visual-module-03.png", "Functional module design screenshot", "Functional module design", "Design artifact that breaks product capability into clearer module responsibilities, states, and delivery boundaries."]
       ]
     },
     {
       category: "PRD Delivery",
       responsibility: "Document requirements, fields, acceptance context, and delivery evidence",
       slides: [
-        ["assets/iia-cloud-create-issue.png", "IIA Cloud create issue requirement screenshot", "Create-issue PRD screen", "Requirement-document screenshot defining issue creation fields, product rules, and the expected input structure."],
-        ["assets/iia-cloud-issue-core-fields.png", "IIA Cloud issue core fields screenshot", "Issue core-field specification", "PRD evidence for required fields, issue metadata, ownership, and traceability constraints."],
-        ["assets/iia-cloud-issue-list-view.png", "IIA Cloud issue list requirement screenshot", "Issue-list requirement view", "Requirement screenshot for list layout, filtering, state display, and delivery-management entry points."],
-        ["assets/vxspace-cloud-knowledge-doc.png", "VxSPACE Cloud knowledge document screen", "Knowledge document delivery", "Documentation surface showing how product knowledge and implementation context are organized for delivery."],
-        ["assets/iia-cloud-baseline-folder.png", "IIA Cloud baseline folder screen", "Baseline-folder delivery", "Document baseline view for organizing versions, folders, and reusable delivery material."],
-        ["assets/os-static-review.png", "Operating system testing static review page", "Requirement-to-verification evidence", "Connects requirements, code mapping, implementation status, review conclusions, and verification actions."]
+        ["assets/visual-prd-01.png", "PRD delivery screenshot one", "PRD requirement page", "Requirement-delivery screenshot showing how product rules, feature scope, and acceptance context are documented."],
+        ["assets/visual-prd-02.png", "PRD delivery screenshot two", "PRD detail specification", "PRD screenshot for clarifying interaction rules, field definitions, and the handoff context for implementation."],
+        ["assets/visual-prd-03.png", "PRD delivery screenshot three", "PRD supplemental detail", "Supplemental PRD artifact used to align developers, testers, and reviewers on concrete delivery expectations."]
       ]
     },
     {
       category: "Task Management",
       responsibility: "Track scope, dependencies, owners, progress, and issue closure",
       slides: [
-        ["assets/iia-cloud-issue-management.png", "IIA Cloud issue management detail screen", "Issue governance and relation management", "Task-management surface for source, linked requirements, blockers, child tasks, documents, comments, and ownership."],
-        ["assets/iia-cloud-relation-view.png", "IIA Cloud issue relation view", "Issue relationship map", "Relationship view for understanding dependencies and the impact of a product item."],
-        ["assets/iia-cloud-issue-split.png", "IIA Cloud issue split view", "Issue split-view management", "Focused management layout for balancing issue detail, context, and related delivery information."],
-        ["assets/iia-cloud-automation.png", "IIA Cloud automation detail screen", "Automation workflow management", "Configuration view for repeatable automation and operational hand-offs."],
-        ["assets/vxspace-cloud-issue-detail.png", "VxSPACE Cloud issue detail screen", "Cloud issue tracking", "Issue detail page for technical context, progress follow-up, and closure evidence."],
-        ["assets/vxspace-device-settings.png", "VxSPACE device settings screen", "Device configuration management", "Configuration surface for technical operations and device lifecycle control."]
+        ["assets/visual-task-01.png", "Task management screenshot one", "Task tracking view", "Management screenshot for tracking task state, ownership, progress, and follow-up across product delivery."],
+        ["assets/visual-task-02.png", "Task management screenshot two", "Issue planning board", "Task-management artifact showing backlog, active work, review queue, completed items, priorities, and status movement."],
+        ["assets/visual-task-03.png", "Task management screenshot three", "Delivery issue list", "Screenshot used to manage task breakdown, defects, acceptance status, and the path to closure."],
+        ["assets/visual-task-04.png", "Task management screenshot four", "Task closure evidence", "Management artifact for summarizing delivery progress, unresolved risks, and closure evidence."]
       ]
     },
     {
       category: "User Materials Delivery",
       responsibility: "Package product knowledge for users, teams, and operations",
       slides: [
-        ["assets/vxspace-cloud-knowledge-doc.png", "VxSPACE Cloud knowledge document screen", "User-facing knowledge document", "Knowledge document page used to explain product context, usage material, and team handoff information."],
-        ["assets/iia-cloud-structure-management.png", "IIA Cloud structure management screen", "Knowledge structure management", "Management surface for organizing product knowledge, folder structure, and reusable user-facing material."],
-        ["assets/iia-cloud-baseline-folder.png", "IIA Cloud baseline folder screen", "Baseline material package", "Folder-based baseline package for released materials, reference documents, and cross-team reuse."],
-        ["assets/vxspace-cloud-device-detail.png", "VxSPACE Cloud device detail screen", "Device detail material", "User-support view for explaining device state, cloud attributes, and operational context."],
-        ["assets/vxspace-device-detail.png", "VxSPACE desktop device detail screen", "Runtime device detail material", "Desktop material for communicating device lifecycle, runtime state, and support actions."],
-        ["assets/vxspace-device-logs.png", "VxSPACE device logs screen", "Operational logs material", "Log view supporting user troubleshooting, issue triage, and recovery explanation."]
+        ["assets/visual-user-materials-01.png", "User material delivery screenshot one", "User material page", "User-material screenshot for packaging product knowledge into content that users, teams, or operations can consume."],
+        ["assets/visual-user-materials-02.png", "User material delivery screenshot two", "User guide material", "Delivery screenshot for guides, explanations, or operational materials that support onboarding and handoff."]
       ]
     }
   ],
@@ -535,70 +520,56 @@ const visualSlides = {
       category: "原型交付",
       responsibility: "把概念转化为研发可理解的界面方案",
       slides: [
-        ["assets/iia-cloud-structure-list.png", "IIA Cloud 结构列表原型界面", "工作空间结构原型交付", "用于交付导航、文档结构、负责人、版本信息与跨工作空间的信息架构。"],
-        ["assets/os-testing-prototype.png", "操作系统测试验证原型界面", "操作系统测试验证工作台", "展示需求审查进度、问题项、测试人员确认与交付证据。"],
-        ["assets/vxspace-ota-prototype.png", "VxSPACE Runtime OTA 更新原型", "Runtime OTA 更新流程", "覆盖设备详情、更新范围、进度反馈与失败处理。"],
-        ["assets/vxspace-device-list.png", "VxSPACE 设备列表原型", "边缘设备列表", "面向工程支持流程的设备资产、状态扫描与首步入口。"],
-        ["assets/vxspace-cloud-console.png", "VxDock Cloud 私有化控制台", "云端控制台入口", "展示私有化部署、组织入口与云端产品治理的原型视图。"]
+        ["assets/visual-prototype-01.png", "知识包详情页原型截图", "知识包详情页", "展示知识包元信息、版本表格与确认弹窗的原型截图。"],
+        ["assets/visual-prototype-02.png", "VxSPACE 设备登记成功原型标注图", "设备登记反馈", "用于说明设备登记成功、状态反馈和添加设备后的用户引导。"],
+        ["assets/visual-prototype-03.png", "VxSPACE 产品形态关系与功能架构", "产品形态与功能架构", "说明 Cloud 与 Desktop 产品形态、定位、数据范围和功能层级。"],
+        ["assets/visual-prototype-04.png", "VxSPACE 资产包列表页原型", "资产包列表页", "展示资源包浏览、状态展示、筛选与操作入口的原型截图。"],
+        ["assets/visual-prototype-05.png", "VxSPACE 深色设备看板原型", "深色设备看板", "展示深色模式下的设备总览、指标、导航与空状态处理。"]
       ]
     },
     {
       category: "交互交付",
       responsibility: "明确用户动作、AI 反馈和人审节点",
       slides: [
-        ["assets/iia-cloud-ai-discuss.png", "IIA Cloud AI 讨论变更项界面", "AI 讨论变更项", "用于在开发前澄清变更内容、影响范围与下一步动作的协作交互。"],
-        ["assets/iia-cloud-ai-edit.png", "IIA Cloud AI 编辑生成界面", "AI 辅助编辑流程", "在产品工作台中生成、检查和调整产品内容的交互概念。"],
-        ["assets/iia-cloud-ai-issues.png", "IIA Cloud AI 辅助创建 Issue 界面", "AI 辅助创建 Issue", "将产品请求转化为多个结构化 Issue，并明确负责人和交付上下文。"],
-        ["assets/iia-cloud-code-generation.png", "IIA Cloud 代码生成交互界面", "代码生成交互", "展示 AI 辅助工程交互中的生成状态、上下文和评审预期。"],
-        ["assets/iia-cloud-sequence.svg", "IIA Cloud Agent 运行时序图", "Agent 运行反馈时序", "展示消息路由、Run 创建、沙箱分配、工具调用、核心服务操作与实时反馈。"]
+        ["assets/visual-interaction-01.png", "IIA Cloud 结构交互截图", "Structure 导航交互", "展示工作空间结构、悬浮状态、文档层级和操作入口。"],
+        ["assets/visual-interaction-02.png", "操作系统静态审查交互截图", "静态审查交互", "展示需求审查、问题确认、重新生成和报告生成等交互动作。"],
+        ["assets/visual-interaction-03.png", "Issue 看板交互截图", "看板任务交互", "展示 Issue 搜索、视图切换、状态列、卡片、优先级和进度跟踪。"]
       ]
     },
     {
       category: "功能模块设计",
       responsibility: "把产品范围拆成模块、规则和可复用闭环",
       slides: [
-        ["assets/iia-cloud-framework.svg", "IIA Cloud 产品框架图", "AI 工程平台产品框架", "拆解用户工作台、消息路由、Agent 编排、沙箱执行与核心平台服务。"],
-        ["assets/iia-cloud-logic-flow.svg", "IIA Cloud 产品逻辑流程图", "从沟通到交付的业务逻辑", "从团队沟通、AI 创建 Issue 到需求分析、方案设计、开发、验证、发布与复用。"],
-        ["assets/ai-agent-architecture.png", "AI 智能体能力架构图", "AI 智能体能力架构", "覆盖模型调用、知识检索、流程编辑、运行观测、协作、权限与成果管理。"],
-        ["assets/ai-requirement-flow.png", "需求分析智能体流程图", "需求分析模块流程", "展示多源输入解析、上下文控制、知识检索与索引增强。"],
-        ["assets/ai-coding-flow.png", "AI 辅助编码智能体流程图", "AI 辅助编码模块流程", "展示模型配置、流程状态、人审机制与集成支撑。"],
-        ["assets/vxspace-cloud-asset-tree.png", "VxSPACE Cloud 资产树原型", "云端资产模块结构", "展示资产层级、组织上下文与治理入口。"]
+        ["assets/visual-module-01.png", "VxDock 功能架构图", "VxDock 功能架构", "连接 Agent / CLI、Desktop 模块、服务端集成、OTA 平台与 RAGFlow 知识库的模块设计图。"],
+        ["assets/visual-module-02.png", "设备详情页模块更新静态原型", "模块更新静态原型", "说明设备详情、检查更新、结果反馈、更新选择与确认行为的模块设计截图。"],
+        ["assets/visual-module-03.png", "功能模块设计截图", "功能模块设计", "用于拆解产品能力、模块职责、状态和交付边界的设计材料。"]
       ]
     },
     {
       category: "PRD 交付",
       responsibility: "沉淀需求、字段、验收上下文和交付证据",
       slides: [
-        ["assets/iia-cloud-create-issue.png", "IIA Cloud 创建 Issue 需求截图", "创建 Issue PRD 页面", "需求文档截图，定义 Issue 创建字段、产品规则与输入结构。"],
-        ["assets/iia-cloud-issue-core-fields.png", "IIA Cloud Issue 核心字段截图", "Issue 核心字段说明", "体现必填字段、Issue 元数据、负责人和可追溯约束的 PRD 证据。"],
-        ["assets/iia-cloud-issue-list-view.png", "IIA Cloud Issue 列表需求截图", "Issue 列表需求视图", "说明列表布局、筛选、状态展示与交付管理入口的需求截图。"],
-        ["assets/vxspace-cloud-knowledge-doc.png", "VxSPACE Cloud 知识文档界面", "知识文档交付", "展示产品知识和实现上下文如何被整理为可交付文档。"],
-        ["assets/iia-cloud-baseline-folder.png", "IIA Cloud 基线文件夹界面", "基线文件夹交付", "用于组织版本、文件夹和可复用交付材料的文档基线视图。"],
-        ["assets/os-static-review.png", "操作系统测试静态审查页面", "需求到验证证据", "连接需求、代码映射、实现状态、审查结论与复验操作。"]
+        ["assets/visual-prd-01.png", "PRD 交付截图一", "PRD 需求页面", "展示产品规则、功能范围和验收上下文如何沉淀为需求交付物。"],
+        ["assets/visual-prd-02.png", "PRD 交付截图二", "PRD 细节说明", "用于说明交互规则、字段定义和实现交接上下文的 PRD 截图。"],
+        ["assets/visual-prd-03.png", "PRD 交付截图三", "PRD 补充细节", "用于让开发、测试和评审人员对齐具体交付预期的补充需求材料。"]
       ]
     },
     {
       category: "任务管理",
       responsibility: "跟踪范围、依赖、负责人、进度和问题闭环",
       slides: [
-        ["assets/iia-cloud-issue-management.png", "IIA Cloud Issue 管理详情界面", "Issue 治理与关联管理", "在一个任务管理视图中展示来源、关联需求、阻塞关系、子任务、文档、评论与负责人。"],
-        ["assets/iia-cloud-relation-view.png", "IIA Cloud Issue 关系视图", "Issue 关联关系图", "用于理解产品项依赖关系和影响范围的可视化视图。"],
-        ["assets/iia-cloud-issue-split.png", "IIA Cloud Issue 分屏界面", "Issue 分屏管理", "平衡 Issue 详情、上下文与交付关联信息的管理布局。"],
-        ["assets/iia-cloud-automation.png", "IIA Cloud 自动化详情界面", "自动化流程管理", "配置可复用自动化流程和交接节点的管理界面。"],
-        ["assets/vxspace-cloud-issue-detail.png", "VxSPACE Cloud Issue 详情界面", "云端 Issue 跟踪", "用于技术上下文、进度跟进和闭环证据的 Issue 详情页。"],
-        ["assets/vxspace-device-settings.png", "VxSPACE 设备设置界面", "设备配置管理", "支持技术运营和设备生命周期管理的配置界面。"]
+        ["assets/visual-task-01.png", "任务管理截图一", "任务跟踪视图", "用于跟踪任务状态、负责人、进度和产品交付后续动作的管理截图。"],
+        ["assets/visual-task-02.png", "任务管理截图二", "Issue 规划看板", "展示待办、进行中、待评审、已完成、优先级和状态流转的任务管理材料。"],
+        ["assets/visual-task-03.png", "任务管理截图三", "交付问题列表", "用于管理任务拆解、缺陷、验收状态和闭环路径的截图。"],
+        ["assets/visual-task-04.png", "任务管理截图四", "任务闭环证据", "用于总结交付进度、未决风险和闭环证据的管理材料。"]
       ]
     },
     {
       category: "用户材料交付",
       responsibility: "把产品知识包装给用户、团队和运营使用",
       slides: [
-        ["assets/vxspace-cloud-knowledge-doc.png", "VxSPACE Cloud 知识文档界面", "面向用户的知识文档", "用于说明产品上下文、使用材料与团队交接信息的知识文档页面。"],
-        ["assets/iia-cloud-structure-management.png", "IIA Cloud 结构管理界面", "知识结构管理", "用于组织产品知识、文件夹结构和可复用用户材料的管理界面。"],
-        ["assets/iia-cloud-baseline-folder.png", "IIA Cloud 基线文件夹界面", "基线材料包", "面向发布材料、参考文档和跨团队复用的文件夹式基线材料。"],
-        ["assets/vxspace-cloud-device-detail.png", "VxSPACE Cloud 设备详情界面", "设备详情材料", "用于向用户解释设备状态、云端属性与运维上下文的支持视图。"],
-        ["assets/vxspace-device-detail.png", "VxSPACE 桌面端设备详情界面", "Runtime 设备详情材料", "用于说明设备生命周期、运行状态和支持动作的桌面端材料。"],
-        ["assets/vxspace-device-logs.png", "VxSPACE 设备日志界面", "运行日志材料", "支持用户排障、问题分级和恢复说明的日志视图。"]
+        ["assets/visual-user-materials-01.png", "用户材料交付截图一", "用户材料页面", "把产品知识整理成用户、团队或运营可直接阅读和使用的材料。"],
+        ["assets/visual-user-materials-02.png", "用户材料交付截图二", "用户指南材料", "用于支持上线说明、使用引导、培训或交接的用户材料截图。"]
       ]
     }
   ]

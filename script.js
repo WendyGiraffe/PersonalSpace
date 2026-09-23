@@ -1,9 +1,7 @@
-const githubUrl = "https://github.com/WendyGiraffe";
-
 const translations = {
   en: {
     skip: "Skip to content",
-    nav: { cases: "Case Studies", delivery: "Delivery", visuals: "Visuals", capabilities: "Capabilities", experience: "Experience", github: "GitHub", contact: "Contact" },
+    nav: { cases: "Case Studies", delivery: "Delivery", visuals: "Visuals", capabilities: "Capabilities", experience: "Experience", contact: "Contact" },
     hero: {
       eyebrow: "AI Product Manager · Technical PM · Developer",
       title: "Building agentic product systems from problem framing to production delivery.",
@@ -46,21 +44,16 @@ const translations = {
     },
     experience: { label: "Experience", title: "Building products in AI, security, and enterprise platforms." },
     education: { label: "Education & Credentials", title: "Engineering foundation with international training." },
-    github: {
-      label: "Public GitHub",
-      title: "Code footprint and learning archive.",
-      desc: "Public repositories visible on GitHub. I keep this section factual and link directly to source."
-    },
     contact: {
       label: "Contact",
       title: "Let's build AI products that survive real delivery.",
       desc: "Open to AI Product Manager, Technical Product Manager, and Platform Product Manager opportunities."
     },
-    footer: { note: "Designed as a static bilingual portfolio for GitHub Pages." }
+    footer: { note: "Designed as a static bilingual portfolio for GitHub Pages.", views: "Views:", visitors: "Visitors:" }
   },
   zh: {
     skip: "跳转到正文",
-    nav: { cases: "项目案例", delivery: "交付进展", visuals: "产品视觉", capabilities: "能力地图", experience: "工作经历", github: "GitHub", contact: "联系我" },
+    nav: { cases: "项目案例", delivery: "交付进展", visuals: "产品视觉", capabilities: "能力地图", experience: "工作经历", contact: "联系我" },
     hero: {
       eyebrow: "AI 产品经理 · 技术产品经理 · 开发者",
       title: "从问题定义到生产交付，构建真正可落地的 Agent 产品系统。",
@@ -103,17 +96,12 @@ const translations = {
     },
     experience: { label: "工作经历", title: "在 AI、安全与企业平台领域持续构建产品。" },
     education: { label: "教育与资质", title: "工程背景与国际化学习经历。" },
-    github: {
-      label: "公开 GitHub",
-      title: "代码足迹与持续学习记录。",
-      desc: "以下内容来自 GitHub 公开仓库，信息保持克制，并直接链接到源页面。"
-    },
     contact: {
       label: "联系我",
       title: "一起打造经得起真实交付的 AI 产品。",
       desc: "目前关注 AI 产品经理、技术产品经理和平台产品经理机会。"
     },
-    footer: { note: "为 GitHub Pages 打造的静态双语个人作品集。" }
+    footer: { note: "为 GitHub Pages 打造的静态双语个人作品集。", views: "访问量：", visitors: "访客：" }
   }
 };
 
@@ -435,24 +423,6 @@ const data = {
       ["西南大学", "自动化 · 学士 · 重庆", "2015 年 9 月 — 2019 年 6 月", "学习数据结构、计算机网络与 Java；担任数据结构与分析课程助教。", ["CISP", "中级计算机专业技术资格"]],
       ["技术工具箱", "产品、开发与运维", "持续实践", "Java · SQL · Python · C++ · MySQL · Oracle · Redis · MyBatis · Prometheus · Grafana · OpenTelemetry · ELK · Axure · Figma", ["专利", "加密布谷鸟过滤器"]]
     ]
-  },
-  repos: {
-    en: [
-      ["module5-solution", "Public repository", "JavaScript", "2021"],
-      ["module4-solution", "Public repository", "JavaScript", "2021"],
-      ["Module3_Solution", "Public repository", "Code archive", "2021"],
-      ["module2-solution", "This is assignment for module2", "Code archive", "2021"],
-      ["cousera-test", "Cousera test repository", "Code archive", "2021"],
-      ["Leetcode-Everyday", "A site I upload my code for leetcode everyday!", "Code archive", "2020"]
-    ],
-    zh: [
-      ["module5-solution", "公开仓库", "JavaScript", "2021"],
-      ["module4-solution", "公开仓库", "JavaScript", "2021"],
-      ["Module3_Solution", "公开仓库", "代码归档", "2021"],
-      ["module2-solution", "Module 2 课程作业", "代码归档", "2021"],
-      ["cousera-test", "Coursera 测试仓库", "代码归档", "2021"],
-      ["Leetcode-Everyday", "每日上传 LeetCode 代码的仓库", "代码归档", "2020"]
-    ]
   }
 };
 
@@ -708,12 +678,6 @@ function renderEducation() {
   `).join("");
 }
 
-function renderRepos() {
-  document.getElementById("repoGrid").innerHTML = data.repos[currentLang].map(([name, desc, language, year]) => `
-    <a class="repo-card reveal" href="${githubUrl}/${name}" target="_blank" rel="noreferrer"><div><div class="repo-top"><span class="repo-name">${name}</span><span class="repo-arrow">↗</span></div><p class="repo-desc">${desc}</p></div><div class="repo-foot"><span>${language}</span><span>${year}</span></div></a>
-  `).join("");
-}
-
 function renderAll() {
   setTextContent();
   renderMetrics();
@@ -725,7 +689,6 @@ function renderAll() {
   renderWorkflow();
   renderTimeline();
   renderEducation();
-  renderRepos();
   observeReveals();
 }
 
@@ -775,6 +738,15 @@ document.querySelectorAll(".nav-links a").forEach((link) => link.addEventListene
 
 document.getElementById("year").textContent = new Date().getFullYear();
 renderAll();
+
+function revealVisitStats(attempt = 0) {
+  const value = document.getElementById("busuanzi_value_site_pv");
+  const stats = document.getElementById("visitStats");
+  if (!value || !stats || attempt > 20) return;
+  if (value.textContent.trim()) { stats.style.display = ""; return; }
+  setTimeout(() => revealVisitStats(attempt + 1), 500);
+}
+revealVisitStats();
 if (window.location.hash) {
   setTimeout(() => document.querySelector(window.location.hash)?.scrollIntoView(), 0);
 }

@@ -31,7 +31,6 @@
         <a href="#visuals" data-i18n="nav.visuals">Visuals</a>
         <a href="#capabilities" data-i18n="nav.capabilities">Capabilities</a>
         <a href="#experience" data-i18n="nav.experience">Experience</a>
-        <a href="#github" data-i18n="nav.github">GitHub</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
         <button class="lang-toggle" type="button" aria-label="Switch language">
           <span class="lang-current">EN</span>
@@ -170,17 +169,6 @@
       </div>
     </section>
 
-    <section class="section github-section" id="github">
-      <div class="section-inner">
-        <div class="section-header reveal">
-          <span class="section-label" data-i18n="github.label">Public GitHub</span>
-          <h2 data-i18n="github.title">Code footprint and learning archive.</h2>
-          <p data-i18n="github.desc">Public repositories visible on GitHub. I keep this section factual and link directly to source.</p>
-        </div>
-        <div class="repo-grid" id="repoGrid"></div>
-      </div>
-    </section>
-
     <section class="section contact-section" id="contact">
       <div class="section-inner contact-card reveal">
         <div>
@@ -202,10 +190,12 @@
   <footer class="site-footer">
     <div class="section-inner footer-inner">
       <span>© <span id="year">2026</span> Chang Zhou</span>
+      <span class="footer-stats" id="visitStats" style="display:none"><span data-i18n="footer.views">Views:</span> <span id="busuanzi_value_site_pv"></span> · <span data-i18n="footer.visitors">Visitors:</span> <span id="busuanzi_value_site_uv"></span></span>
       <span data-i18n="footer.note">Designed as a static bilingual portfolio for GitHub Pages.</span>
     </div>
   </footer>
 
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

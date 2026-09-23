@@ -194,6 +194,17 @@ button { font: inherit; }
 .capability-list { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: 1rem; }
 .capability-list span { padding: .25rem .5rem; color: var(--ink-muted); border: 1px solid var(--line); border-radius: 5px; font: .61rem var(--mono); }
 
+.ai-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.75rem; }
+.ai-card { padding: 1.4rem; border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--surface); transition: transform .25s, box-shadow .25s, border-color .25s; }
+.ai-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow-md); }
+.ai-card-top { display: flex; align-items: center; gap: .6rem; }
+.ai-tag { flex-shrink: 0; padding: .3rem .55rem; border-radius: 6px; background: rgba(212,120,60,.14); color: var(--accent); font: 700 .64rem var(--mono); letter-spacing: .04em; }
+.ai-card h3 { margin: 0; font-size: .95rem; letter-spacing: -.025em; }
+.ai-card-desc { margin: .6rem 0 0; color: var(--ink-soft); font-size: .78rem; line-height: 1.7; }
+.ai-points { margin: 1rem 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+.ai-points li { position: relative; padding-left: 1rem; color: var(--ink-muted); font-size: .74rem; line-height: 1.6; }
+.ai-points li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); }
+
 .workflow-section { background: var(--surface-soft); }
 .workflow-list { position: relative; display: flex; flex-direction: column; }
 .workflow-list::before { content: ""; position: absolute; top: 1.45rem; bottom: 1.45rem; left: 18px; width: 1px; background: linear-gradient(var(--accent), var(--green), var(--purple)); }
@@ -257,6 +268,7 @@ button { font: inherit; }
   .two-col { grid-template-columns: 1fr; gap: 2rem; }
   .wide-gap { gap: 2rem; }
   .capability-grid { grid-template-columns: repeat(2, 1fr); }
+  .ai-grid { grid-template-columns: repeat(2, 1fr); }
   .repo-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-card { align-items: start; flex-direction: column; }
   .contact-actions { width: 100%; max-width: 370px; }
@@ -278,7 +290,7 @@ button { font: inherit; }
   .section-header h2 { font-size: 2rem; }
   .case-grid { grid-template-columns: 1fr; }
   .case-card, .case-card:first-child, .case-card:nth-child(2), .case-card:nth-child(3) { grid-column: span 1; min-height: 265px; }
-  .capability-grid, .repo-grid, .practice-grid { grid-template-columns: 1fr; }
+  .capability-grid, .repo-grid, .practice-grid, .ai-grid { grid-template-columns: 1fr; }
   .delivery-scoreboard { grid-template-columns: 1fr; }
   .delivery-metric { min-height: 100px; }
   .artifact-grid { grid-template-columns: 1fr; }

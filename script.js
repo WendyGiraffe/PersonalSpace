@@ -1,7 +1,7 @@
 const translations = {
   en: {
     skip: "Skip to content",
-    nav: { cases: "Case Studies", delivery: "Delivery", visuals: "Visuals", capabilities: "Capabilities", experience: "Experience", contact: "Contact" },
+    nav: { cases: "Case Studies", delivery: "Delivery", visuals: "Visuals", capabilities: "Capabilities", ai: "AI Foundation", experience: "Experience", contact: "Contact" },
     hero: {
       eyebrow: "AI Product Manager · Technical PM · Developer",
       title: "Building agentic product systems from problem framing to production delivery.",
@@ -37,6 +37,11 @@ const translations = {
       title: "AI product management backed by engineering depth.",
       desc: "From agent architecture, RAG design, and AI evaluation to enterprise delivery governance — I own the full AI product loop."
     },
+    ai: {
+      label: "AI Technical Foundation",
+      title: "Hands-on depth across RAG, agents, and large language models.",
+      desc: "Not buzzwords — the techniques I have actually designed, built, and shipped in real products."
+    },
     workflow: {
       label: "How I Work",
       title: "From uncertainty to a shipped product loop.",
@@ -53,7 +58,7 @@ const translations = {
   },
   zh: {
     skip: "跳转到正文",
-    nav: { cases: "项目案例", delivery: "交付进展", visuals: "产品视觉", capabilities: "能力地图", experience: "工作经历", contact: "联系我" },
+    nav: { cases: "项目案例", delivery: "交付进展", visuals: "产品视觉", capabilities: "能力地图", ai: "AI 沉淀", experience: "工作经历", contact: "联系我" },
     hero: {
       eyebrow: "AI 产品经理 · 技术产品经理 · 开发者",
       title: "从问题定义到生产交付，构建真正可落地的 Agent 产品系统。",
@@ -75,7 +80,7 @@ const translations = {
     },
     delivery: {
       label: "交付进展",
-      title: "把风雷近期工作经历转化为可量化的交付证据。",
+      title: "把丰蕾近期工作经历转化为可量化的交付证据。",
       desc: "更完整地呈现 IIA Cloud、VxSPACE、操作系统测试、梯形图转换与智能体探索中的产品推进工作。",
       panelTitle: "项目进展"
     },
@@ -88,6 +93,11 @@ const translations = {
       label: "能力地图",
       title: "以工程深度支撑的 AI 产品管理。",
       desc: "从 Agent 架构、RAG 设计、AI 评测到企业级交付治理，我负责 AI 产品的完整闭环。"
+    },
+    ai: {
+      label: "AI 技术沉淀",
+      title: "在 RAG、Agent 与大模型上的真实落地积累。",
+      desc: "不是概念罗列，而是我在真实产品中设计、搭建并交付过的技术。"
     },
     workflow: {
       label: "工作方式",
@@ -115,7 +125,7 @@ const data = {
     ],
     zh: [
       ["4+", "年 AI 与技术产品经验"],
-      ["5", "个风雷当前项目支持"],
+      ["5", "个丰蕾当前项目支持"],
       ["148", "IIA Cloud 需求梳理项"],
       ["45", "核心功能交付跟踪项"]
     ]
@@ -372,6 +382,78 @@ const data = {
       ["↺", "负责任的 AI 交付", "通过人工审核、可追溯性、基于来源的回答、结构化输出与明确指标提升可靠性。", ["HITL", "引用", "溯源落地", "评测集", "本地 LLM"]]
     ]
   },
+  aiFoundation: {
+    en: [
+      {
+        tag: "RAG",
+        title: "Retrieval-Augmented Generation",
+        desc: "Turn enterprise knowledge into grounded, traceable generation.",
+        points: [
+          "Document parsing, chunking, and metadata design for knowledge bases",
+          "Hybrid retrieval and re-ranking to control recall quality",
+          "Citation grounding so every generated answer is verifiable",
+          "RAGFlow and local knowledge-base deployment in real products"
+        ]
+      },
+      {
+        tag: "AGENT",
+        title: "Agent Systems",
+        desc: "From single-turn chat to reliable multi-step execution.",
+        points: [
+          "Task planning, state machines, and workflow orchestration",
+          "Tool calling with sandboxed execution and MCP integration",
+          "Human-in-the-loop checkpoints and failure recovery",
+          "OS testing platform: requirements → test generation → reports"
+        ]
+      },
+      {
+        tag: "LLM",
+        title: "Large Language Models",
+        desc: "Model selection, prompt engineering, and measurable quality.",
+        points: [
+          "Cloud API vs local deployment: cost, latency, and data-security trade-offs",
+          "Prompt engineering for structured, constrained outputs",
+          "Eval sets, regression testing, and faithfulness checks",
+          "Local LLM deployment for security-sensitive scenarios"
+        ]
+      }
+    ],
+    zh: [
+      {
+        tag: "RAG",
+        title: "检索增强生成",
+        desc: "把企业知识变成有依据、可追溯的生成能力。",
+        points: [
+          "文档解析、切分与知识库元数据设计",
+          "混合检索与重排序，控制召回质量",
+          "引用溯源，让每个生成回答可验证",
+          "RAGFlow 与本地化知识库的真实产品落地"
+        ]
+      },
+      {
+        tag: "AGENT",
+        title: "智能体系统",
+        desc: "从单轮对话到可靠的多步执行。",
+        points: [
+          "任务规划、状态机与工作流编排",
+          "工具调用、沙箱执行与 MCP 集成",
+          "Human-in-the-loop 检查点与失败兜底",
+          "操作系统测试平台：需求解析 → 用例生成 → 报告全链路"
+        ]
+      },
+      {
+        tag: "LLM",
+        title: "大模型",
+        desc: "模型选型、Prompt 工程与可度量的质量。",
+        points: [
+          "云端 API 与本地部署的成本 / 延迟 / 数据安全权衡",
+          "面向结构化输出的 Prompt 工程",
+          "评测集、回归测试与忠实性检查",
+          "安全敏感场景下的本地 LLM 部署实践"
+        ]
+      }
+    ]
+  },
   workflow: {
     en: [
       ["01", "Start with the real constraint", "Research customer workflows, operating environments, and the cost of the current workaround before choosing an AI solution."],
@@ -405,7 +487,7 @@ const data = {
       {
         date: "2026 年 5 月 — 至今",
         role: "软件定义事业部 产品经理",
-        company: "上海风雷科技有限公司",
+        company: "上海丰蕾科技有限公司",
         bullets: ["负责 IIA Cloud、VxSPACE、操作系统测试、梯形图转换和智能体探索等项目的需求梳理、排期、评审、开发跟进、测试跟进与交付协同。", "在 IIA Cloud 中完成 148 项需求梳理、13 份产品文档输出 / 更新，组织或参与 10+ 次需求评审，跟进 45 项核心功能开发、测试与验收，并支持三期开发和四次项目演示。", "在 VxSPACE 中整理 53 项需求并拆解为 6 个功能模块，支持阶段排期，在一期开发和二期设计推进过程中跟进并闭环 18 个问题 / 缺陷。", "在操作系统测试项目中完成 117 项测试需求 / 范围梳理，推动原型和需求文档确认，第一期开发节点完成后进入测试阶段。"]
       },
       {
@@ -664,6 +746,16 @@ function renderCapabilities() {
   `).join("");
 }
 
+function renderAi() {
+  document.getElementById("aiGrid").innerHTML = data.aiFoundation[currentLang].map((item) => `
+    <article class="ai-card reveal">
+      <div class="ai-card-top"><span class="ai-tag">${item.tag}</span><h3>${item.title}</h3></div>
+      <p class="ai-card-desc">${item.desc}</p>
+      <ul class="ai-points">${item.points.map((point) => `<li>${point}</li>`).join("")}</ul>
+    </article>
+  `).join("");
+}
+
 function renderWorkflow() {
   document.getElementById("workflowList").innerHTML = data.workflow[currentLang].map(([number, title, desc]) => `
     <div class="workflow-step"><div class="workflow-number">${number}</div><div><h3>${title}</h3><p>${desc}</p></div></div>
@@ -693,6 +785,7 @@ function renderAll() {
   renderWorkflow();
   renderTimeline();
   renderEducation();
+  renderAi();
   observeReveals();
 }
 

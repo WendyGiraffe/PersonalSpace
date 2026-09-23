@@ -14,7 +14,7 @@ const translations = {
     intro: {
       label: "Positioning",
       title: "A product leader who can go deep with engineers.",
-      body: "With a computer engineering background and Java/Spring delivery experience, I translate ambiguous business problems into product requirements, technical workflows, API designs, acceptance criteria, and releases that teams can execute."
+      body: "With a computer engineering background and Java/Spring delivery experience, I translate ambiguous business problems into AI product requirements, agent and RAG workflows, API designs, evaluation criteria, and releases that teams can execute."
     },
     cases: {
       label: "Selected Work",
@@ -34,8 +34,8 @@ const translations = {
     },
     capabilities: {
       label: "Capability Map",
-      title: "Product thinking plus implementation literacy.",
-      desc: "I work best at the boundary where customer problems, AI capability design, platform architecture, and delivery governance meet."
+      title: "AI product management backed by engineering depth.",
+      desc: "From agent architecture, RAG design, and AI evaluation to enterprise delivery governance — I own the full AI product loop."
     },
     workflow: {
       label: "How I Work",
@@ -66,7 +66,7 @@ const translations = {
     intro: {
       label: "我的定位",
       title: "懂产品，也能和工程师深入协作。",
-      body: "我具备计算机工程背景和 Java / Spring 交付经验，能够把模糊的业务问题转化为产品需求、技术工作流、API 设计、验收标准与团队可以执行的版本计划。"
+      body: "我具备计算机工程背景和 Java / Spring 交付经验，能够把模糊的业务问题转化为 AI 产品需求、Agent 与 RAG 工作流、API 设计、评测标准与团队可以执行的版本计划。"
     },
     cases: {
       label: "精选项目",
@@ -75,7 +75,7 @@ const translations = {
     },
     delivery: {
       label: "交付进展",
-      title: "把丰蕾近期工作经历转化为可量化的交付证据。",
+      title: "把风雷近期工作经历转化为可量化的交付证据。",
       desc: "更完整地呈现 IIA Cloud、VxSPACE、操作系统测试、梯形图转换与智能体探索中的产品推进工作。",
       panelTitle: "项目进展"
     },
@@ -86,8 +86,8 @@ const translations = {
     },
     capabilities: {
       label: "能力地图",
-      title: "产品思维与工程实现能力的交叉点。",
-      desc: "我擅长在客户问题、AI 能力设计、平台架构和交付治理之间建立清晰连接。"
+      title: "以工程深度支撑的 AI 产品管理。",
+      desc: "从 Agent 架构、RAG 设计、AI 评测到企业级交付治理，我负责 AI 产品的完整闭环。"
     },
     workflow: {
       label: "工作方式",
@@ -115,7 +115,7 @@ const data = {
     ],
     zh: [
       ["4+", "年 AI 与技术产品经验"],
-      ["5", "个丰蕾当前项目支持"],
+      ["5", "个风雷当前项目支持"],
       ["148", "IIA Cloud 需求梳理项"],
       ["45", "核心功能交付跟踪项"]
     ]
@@ -352,20 +352,24 @@ const data = {
   },
   capabilities: {
     en: [
-      ["✦", "AI product architecture", "Turn model capabilities into reliable user journeys, tool calls, workflow states, and review checkpoints.", ["Agent", "RAG", "Prompt design", "Tool Calling"]],
-      ["↗", "Technical product delivery", "Translate requirements into domain models, APIs, interface specs, acceptance criteria, and integration plans.", ["Java / Spring", "SQL", "Swagger", "ApiFox", "Postman"]],
+      ["✦", "AI product architecture", "Turn model capabilities into reliable user journeys, tool calls, workflow states, and review checkpoints.", ["Agent", "RAG", "Prompt engineering", "MCP", "Tool Calling"]],
+      ["⇄", "Agent & workflow orchestration", "Design multi-step agent workflows with explicit state control, tool routing, human checkpoints, and failure recovery.", ["Multi-agent", "Workflow states", "Human checkpoints", "Orchestration"]],
+      ["⌖", "AI product discovery", "Identify high-value AI use cases by matching model capability, data readiness, and cost / latency constraints before committing to a build.", ["Use-case fit", "Data readiness", "Cost / latency", "ROI"]],
+      ["↗", "Technical product delivery", "Translate requirements into domain models, APIs, interface specs, acceptance criteria, and integration plans.", ["Java / Spring", "SQL", "Swagger", "ApiFox", "LLM APIs"]],
       ["◎", "Enterprise platform thinking", "Design for permissions, governance, auditability, offline capability, lifecycle management, and cross-end consistency.", ["SaaS", "RBAC", "Audit", "Lifecycle"]],
       ["◌", "Execution & alignment", "Keep product, engineering, QA, deployment, operations, and customers moving toward the same release outcome.", ["PRD", "Roadmap", "UAT", "Risk tracking"]],
       ["⌘", "Development literacy", "Hands-on experience with backend delivery and the tools needed to make technical trade-offs concrete.", ["Redis", "MyBatis", "Python", "C++", "Jenkins"]],
-      ["↺", "Responsible AI delivery", "Use human review, traceability, source-grounded answers, structured outputs, and explicit success metrics.", ["HITL", "Citations", "Evaluation", "Local LLM"]]
+      ["↺", "Responsible AI delivery", "Use human review, traceability, source-grounded answers, structured outputs, and explicit success metrics.", ["HITL", "Citations", "Grounding", "Eval sets", "Local LLM"]]
     ],
     zh: [
-      ["✦", "AI 产品架构", "将模型能力转化为可靠的用户路径、工具调用、工作流状态与审核检查点。", ["Agent", "RAG", "Prompt 设计", "Tool Calling"]],
-      ["↗", "技术产品交付", "把需求转化为领域模型、API、接口规格、验收标准和集成计划。", ["Java / Spring", "SQL", "Swagger", "ApiFox", "Postman"]],
+      ["✦", "AI 产品架构", "将模型能力转化为可靠的用户路径、工具调用、工作流状态与审核检查点。", ["Agent", "RAG", "Prompt 工程", "MCP", "Tool Calling"]],
+      ["⇄", "Agent 与工作流编排", "设计多步骤 Agent 工作流，明确状态控制、工具路由、人工检查点与失败兜底。", ["多智能体", "工作流状态", "人工检查点", "编排设计"]],
+      ["⌖", "AI 场景定义", "在动手构建前，先匹配模型能力、数据就绪度与成本 / 延迟约束，识别真正高价值的 AI 场景。", ["场景匹配", "数据就绪", "成本 / 延迟", "ROI"]],
+      ["↗", "技术产品交付", "把需求转化为领域模型、API、接口规格、验收标准和集成计划。", ["Java / Spring", "SQL", "Swagger", "ApiFox", "LLM API"]],
       ["◎", "企业平台思维", "关注权限、治理、可审计、离线能力、生命周期管理与跨端一致性。", ["SaaS", "RBAC", "审计", "生命周期"]],
       ["◌", "执行与对齐", "让产品、研发、测试、部署、运营与客户共同奔向同一个版本结果。", ["PRD", "路线图", "UAT", "风险跟踪"]],
       ["⌘", "开发理解力", "具备后端交付经验，能够把技术取舍落到具体实现与协作工具上。", ["Redis", "MyBatis", "Python", "C++", "Jenkins"]],
-      ["↺", "负责任的 AI 交付", "通过人工审核、可追溯性、基于来源的回答、结构化输出与明确指标提升可靠性。", ["HITL", "引用", "评测", "本地 LLM"]]
+      ["↺", "负责任的 AI 交付", "通过人工审核、可追溯性、基于来源的回答、结构化输出与明确指标提升可靠性。", ["HITL", "引用", "溯源落地", "评测集", "本地 LLM"]]
     ]
   },
   workflow: {
